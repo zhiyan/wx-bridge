@@ -11,5 +11,8 @@
     "url": "git@gitlab.daikuan.com:npm/wxBridge.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1"
+  }
 }
