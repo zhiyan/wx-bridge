@@ -4,7 +4,7 @@
 
 页面:
 ```javascript
-var __window.__WX_AUTH____ = {
+var __window.__WX_AUTH__ = {
 	nonceStr: 'xxx',
 	appId: 'xxx',
 	signature: 'xxx',
@@ -18,7 +18,7 @@ import wxBridge from 'libs/wx-bridge'
 wxBridge(options)
 ```
 
-### options 参数(可选)
+### options 参数(可选) [默认取__WX_AUTH__中内容]
  * appId: (必填) String, 公众号的唯一标识
  * timestamp: (必填) String, 生成签名的时间戳
  * nonceStr: (必填) String, 生成签名的时间戳
