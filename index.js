@@ -18,12 +18,6 @@ exports.default = function () {
 	script.onload = function () {
 		if (typeof wx !== 'undefined') {
 
-			if (dev) {
-				wx.ready = function (cb) {
-					return cb();
-				};
-			}
-
 			config.api = config.api || ['onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ'];
 
 			// 默认值
@@ -34,7 +28,7 @@ exports.default = function () {
 
 			wx.config({
 				// 开启调试模式,调用的所有api的返回值会在客户端alert出来,若要查看传入的参数,可以在pc端打开,参数信息会通过log打出,仅在pc端时才会打印。
-				debug: config.debug || (dev ? true : false),
+				debug: config.debug || false,
 
 				// 必填,公众号的唯一标识
 				appId: config.appid || config.appId || '',
