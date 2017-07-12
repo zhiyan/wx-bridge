@@ -3,17 +3,20 @@
 ### 使用
 
 页面:
+```javascript
 var __window.__WX_AUTH____ = {
 	nonceStr: 'xxx',
 	appId: 'xxx',
 	signature: 'xxx',
 	timestamp: 'xxx'
 }
+```
 
 js:
+```javascript
 import wxBridge from 'libs/wx-bridge'
 wxBridge(options)
-
+```
 
 ### options 参数(可选)
  * appId: (必填) String, 公众号的唯一标识
