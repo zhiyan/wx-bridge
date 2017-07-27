@@ -4,7 +4,7 @@
 
 页面:
 ```javascript
-var __window.__WX_AUTH__ = {
+var __WX_AUTH__ = {
 	nonceStr: 'xxx',
 	appId: 'xxx',
 	signature: 'xxx',
